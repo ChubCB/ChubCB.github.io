@@ -6,7 +6,6 @@ var ref = wilddog.sync().ref();
 var time = 0;
 
 ref.on("value", function(snapshot) {
-    console.log(snapshot.val());
     if(snapshot.val()){
     	var value = snapshot.val().app.message.text;
     	var t = snapshot.val().app.message.time;
