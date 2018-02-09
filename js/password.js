@@ -1,0 +1,1 @@
+var password = {a:"11", b:"cn", c:"oo", d:"mp", e:"ck", f:"89", g:"34", h:"kk", i:"dw", j:"38", k:"67", l:"pp", m:"61", n:"mo", o:"po", p:"cp", q:"qz", r:"15", s:"33", t:"it", u:"xy", v:"bv", w:"wd", x:"rg", y:"lh", z:"zs"};
