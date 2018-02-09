@@ -1,0 +1,153 @@
+.placeholder {
+    margin: 5px 10px;
+    padding: 0 10px;
+    height: 15em;
+    color: #fff;
+    z-index: 10;
+}
+.ydjs {
+    background: linear-gradient(#ffd183 , #ffaa42);
+}
+.xwyc {
+    background: linear-gradient(#ffb9b9 , #ff8888);
+}
+.jnxx {
+    background: linear-gradient(#aebaff , #ac67ff);
+}
+.ywjl {
+    background: linear-gradient(#bee0ff , #32aafa);
+}
+.xxts {
+    background: linear-gradient(#2af7bd , #29cfd6);
+}
+
+.title {
+    font-size: 1.4em;
+}
+.content {
+    font-size: 12px;
+}
+.flexy-grid {
+    padding: 0;
+}
+.flexy-grid:nth-of-type(odd) {
+    background-color: inherit;
+}
+.chartsbox {
+    background-color: #f3f3f3;
+    margin-top: -5px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.chartsbox > div{
+    height: 15em;
+}
+.chart_hide .chartsbox {
+    height: 0;
+}
+.chart_hide {
+    overflow: hidden;
+}
+.bar.base .bar-face, .bar.orange[aria-valuenow='0'] .face-position.right {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.bar.base .face-position.floor.volume-lights {
+    box-shadow: 0 -0.2em 1em rgba(0, 0, 0, 0.15), 0 0.2em 0.1em -5px rgba(0, 0, 0, 0.3), 0 -0.75em 1.75em rgba(254, 254, 254, 0.6);
+}
+/* line 29, ../scss/component.scss */
+.bar.xwycjd .face-position.left, .bar.cyan[aria-valuenow='100'] .face-position.right {
+    background-color: rgba(244, 89, 89, 0.2);
+}
+/* line 45, ../scss/component.scss */
+.bar.xwycjd .percentage:before {
+    background-color: rgba(244, 89, 89, 0.5);
+}
+/* line 49, ../scss/component.scss */
+.bar.xwycjd .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(244, 89, 89, 0.25);
+}
+/* line 64, ../scss/component.scss */
+.bar.xwycjd:not(.has-colors) .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(244, 89, 89, 0);
+}
+
+/* line 29, ../scss/component.scss */
+.bar.jnxxjd .face-position.left, .bar.cyan[aria-valuenow='100'] .face-position.right {
+    background-color: rgba(174, 156, 255, 0.2);
+}
+/* line 45, ../scss/component.scss */
+.bar.jnxxjd .percentage:before {
+    background-color: rgba(174, 156, 255, 0.5);
+}
+/* line 49, ../scss/component.scss */
+.bar.jnxxjd .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(174, 156, 255, 0.25);
+}
+/* line 64, ../scss/component.scss */
+.bar.jnxxjd:not(.has-colors) .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(174, 156, 255, 0);
+}
+
+/* line 29, ../scss/component.scss */
+.bar.ywjljd .face-position.left, .bar.cyan[aria-valuenow='100'] .face-position.right {
+    background-color: rgba(104, 190, 251, 0.2);
+}
+/* line 45, ../scss/component.scss */
+.bar.ywjljd .percentage:before {
+    background-color: rgba(104, 190, 251, 0.5);
+}
+/* line 49, ../scss/component.scss */
+.bar.ywjljd .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(104, 190, 251, 0.25);
+}
+/* line 64, ../scss/component.scss */
+.bar.ywjljd:not(.has-colors) .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(104, 190, 251, 0);
+}
+
+
+/* line 29, ../scss/component.scss */
+.bar.xxtsjd .face-position.left, .bar.cyan[aria-valuenow='100'] .face-position.right {
+    background-color: rgba(47, 226, 204, 0.2);
+}
+/* line 45, ../scss/component.scss */
+.bar.xxtsjd .percentage:before {
+    background-color: rgba(47, 226, 204, 0.5);
+}
+/* line 49, ../scss/component.scss */
+.bar.xxtsjd .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(47, 226, 204, 0.25);
+}
+/* line 64, ../scss/component.scss */
+.bar.xxtsjd:not(.has-colors) .volume-lights.shine:before {
+    box-shadow: 0 1.6em 3em rgba(47, 226, 204, 0);
+}
+
+
+.button-sp-area {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 60%;
+}
+.poster {
+    height: 12em;
+    line-height: 9em;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../images/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.btn-login {
+    color: #fff;
+    border-radius: 24px;
+    background: linear-gradient(to right,#1d6ca5 , #0c3f8a);
+}
+.login-input {
+    border: 1px solid #000;
+    border-radius: 24px;
+    margin-bottom: 20px;
+}
