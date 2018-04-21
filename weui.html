@@ -5,11 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>数据展示</title>
-    <link rel="stylesheet" href="../libs/weui.css">
-    <link rel="stylesheet" type="text/css" href="../css/component.css" />
-    <link rel="stylesheet" type="text/css" href="../css/custom-bars.css" />
-    <link rel="stylesheet" href="../css/base.css">
+    <title>移动端</title>
+    <link rel="stylesheet" href="http://bobo.bj.bcebos.com/weixin%2Fweui.css">
+    <link rel="stylesheet" type="text/css" href="http://bobo.bj.bcebos.com/weixin%2Fcomponent.css" />
+    <link rel="stylesheet" type="text/css" href="http://bobo.bj.bcebos.com/weixin%2Fcustom-bars.css" />
+    <link rel="stylesheet" href="http://bobo.bj.bcebos.com/weixin%2Fbase.css">
     <style type="text/css">
         .icon {
             width: 1em; height: 1em;
@@ -23,6 +23,7 @@
         }
     </style>
     <script src="../fonts/iconfont.js"></script>
+
 </head>
 <body ontouchstart>
     <div>
@@ -31,16 +32,16 @@
                 <div class="placeholder ydjs">
                     <div class="title">
                         <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-yundongxie"></use>
+                            <use xlink:href="#icon-jianshenjihua"></use>
                         </svg>
-                        <span>行为1</span>
+                        <span id="grxm">行为1</span>
                     </div>
                     <section class="content">
                         <article class="flexy-grid">
                             <div class="flexy-column">
                                 <div class="progress-factor flexy-item">
                                     <div class="progress-bar">
-                                        <div class="bar has-rotation has-colors orange ruler-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div id="grxm_aria" class="bar has-rotation has-colors orange ruler-2" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
                                             <div class="tooltip white"></div>
                                             <div class="bar-face face-position roof percentage"></div>
                                             <div class="bar-face face-position back percentage"></div>
@@ -54,14 +55,14 @@
                             </div>
                         </article>
                     </section>
-                    <div class="number">8000</div>
+                    <div id="grxm_num" class="number">8000</div>
                 </div>
             </div>
         </div>
         <div class="weui-flex chart_box">
             <div class="weui-flex__item chart_hide">
                 <div class="placeholder chartsbox">
-                    <div id="testmain"></div>
+                    <div id="grxm_chart"></div>
                 </div>
             </div>
         </div>
@@ -70,16 +71,16 @@
                 <div class="placeholder xwyc">
                     <div class="title">
                         <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-jianshenjihua"></use>
+                            <use xlink:href="#icon-yundongxie"></use>
                         </svg>
-                        <span>行为2</span>
+                        <span id="dlst">行为2</span>
                     </div>
                     <section class="content">
                         <article class="flexy-grid">
                             <div class="flexy-column">
                                 <div class="progress-factor flexy-item">
                                     <div class="progress-bar">
-                                        <div class="bar has-rotation has-colors base xwycjd ruler-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div id="dlst_aria" class="bar has-rotation has-colors lime ruler-2" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
                                             <div class="tooltip white"></div>
                                             <div class="bar-face face-position roof percentage"></div>
                                             <div class="bar-face face-position back percentage"></div>
@@ -93,121 +94,185 @@
                             </div>
                         </article>
                     </section>
-                    <div class="number">8000</div>
+                    <div id="dlst_num" class="number">8000</div>
                 </div>
             </div>
         </div>
         <div class="weui-flex chart_box">
             <div class="weui-flex__item chart_hide">
                 <div class="placeholder chartsbox">
-                    <div id="testmain2"></div>
+                    <div id="dlst_chart"></div>
                 </div>
             </div>
         </div>
-        <!--<div class="weui-flex">-->
-            <!--<div class="weui-flex__item">-->
-                <!--<div class="placeholder jnxx">-->
-                    <!--<div class="title">-->
-                        <!--<svg class="icon" aria-hidden="true">-->
-                            <!--<use xlink:href="#icon-xuexi"></use>-->
-                        <!--</svg>-->
-                        <!--<span>行为3</span>-->
-                    <!--</div>-->
-                    <!--<section class="content">-->
-                        <!--<article class="flexy-grid">-->
-                            <!--<div class="flexy-column">-->
-                                <!--<div class="progress-factor flexy-item">-->
-                                    <!--<div class="progress-bar">-->
-                                        <!--<div class="bar has-rotation has-colors base jnxxjd ruler-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">-->
-                                            <!--<div class="tooltip white"></div>-->
-                                            <!--<div class="bar-face face-position roof percentage"></div>-->
-                                            <!--<div class="bar-face face-position back percentage"></div>-->
-                                            <!--<div class="bar-face face-position floor percentage volume-lights"></div>-->
-                                            <!--<div class="bar-face face-position left"></div>-->
-                                            <!--<div class="bar-face face-position right"></div>-->
-                                            <!--<div class="bar-face face-position front percentage volume-lights shine"></div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</article>-->
-                    <!--</section>-->
-                    <!--<div class="number">8000</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="weui-flex">-->
-            <!--<div class="weui-flex__item">-->
-                <!--<div class="placeholder ywjl">-->
-                    <!--<div class="title">-->
-                        <!--<svg class="icon" aria-hidden="true">-->
-                            <!--<use xlink:href="#icon-yingyu-"></use>-->
-                        <!--</svg>-->
-                        <!--<span>行为4</span>-->
-                    <!--</div>-->
-                    <!--<section class="content">-->
-                        <!--<article class="flexy-grid">-->
-                            <!--<div class="flexy-column">-->
-                                <!--<div class="progress-factor flexy-item">-->
-                                    <!--<div class="progress-bar">-->
-                                        <!--<div class="bar has-rotation has-colors base ywjljd ruler-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">-->
-                                            <!--<div class="tooltip white"></div>-->
-                                            <!--<div class="bar-face face-position roof percentage"></div>-->
-                                            <!--<div class="bar-face face-position back percentage"></div>-->
-                                            <!--<div class="bar-face face-position floor percentage volume-lights"></div>-->
-                                            <!--<div class="bar-face face-position left"></div>-->
-                                            <!--<div class="bar-face face-position right"></div>-->
-                                            <!--<div class="bar-face face-position front percentage volume-lights shine"></div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</article>-->
-                    <!--</section>-->
-                    <!--<div class="number">8000</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="weui-flex">-->
-            <!--<div class="weui-flex__item">-->
-                <!--<div class="placeholder xxts">-->
-                    <!--<div class="title">-->
-                        <!--<svg class="icon" aria-hidden="true">-->
-                            <!--<use xlink:href="#icon-xuexi"></use>-->
-                        <!--</svg>-->
-                        <!--<span>行为5</span>-->
-                    <!--</div>-->
-                    <!--<section class="content">-->
-                        <!--<article class="flexy-grid">-->
-                            <!--<div class="flexy-column">-->
-                                <!--<div class="progress-factor flexy-item">-->
-                                    <!--<div class="progress-bar">-->
-                                        <!--<div class="bar has-rotation has-colors base xxtsjd ruler-2" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">-->
-                                            <!--<div class="tooltip white"></div>-->
-                                            <!--<div class="bar-face face-position roof percentage"></div>-->
-                                            <!--<div class="bar-face face-position back percentage"></div>-->
-                                            <!--<div class="bar-face face-position floor percentage volume-lights"></div>-->
-                                            <!--<div class="bar-face face-position left"></div>-->
-                                            <!--<div class="bar-face face-position right"></div>-->
-                                            <!--<div class="bar-face face-position front percentage volume-lights shine"></div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</article>-->
-                    <!--</section>-->
-                    <!--<div class="number">8000</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <div class="placeholder jnxx">
+                    <div class="title">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-xuexi"></use>
+                        </svg>
+                        <span id="xxjb">行为3</span>
+                    </div>
+                    <section class="content">
+                        <article class="flexy-grid">
+                            <div class="flexy-column">
+                                <div class="progress-factor flexy-item">
+                                    <div class="progress-bar">
+                                        <div id="xxjb_aria" class="bar has-rotation has-colors navy ruler-2" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="tooltip white"></div>
+                                            <div class="bar-face face-position roof percentage"></div>
+                                            <div class="bar-face face-position back percentage"></div>
+                                            <div class="bar-face face-position floor percentage volume-lights"></div>
+                                            <div class="bar-face face-position left"></div>
+                                            <div class="bar-face face-position right"></div>
+                                            <div class="bar-face face-position front percentage volume-lights shine"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <div id="xxjb_num" class="number">8000</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex chart_box">
+            <div class="weui-flex__item chart_hide">
+                <div class="placeholder chartsbox">
+                    <div id="xxjb_chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+                <div class="placeholder ywjl">
+                    <div class="title">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-yingyu-"></use>
+                        </svg>
+                        <span id="rzgz">行为4</span>
+                    </div>
+                    <section class="content">
+                        <article class="flexy-grid">
+                            <div class="flexy-column">
+                                <div class="progress-factor flexy-item">
+                                    <div class="progress-bar">
+                                        <div id="rzgz_aria" class="bar has-rotation has-colors cyan ruler-2" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="tooltip white"></div>
+                                            <div class="bar-face face-position roof percentage"></div>
+                                            <div class="bar-face face-position back percentage"></div>
+                                            <div class="bar-face face-position floor percentage volume-lights"></div>
+                                            <div class="bar-face face-position left"></div>
+                                            <div class="bar-face face-position right"></div>
+                                            <div class="bar-face face-position front percentage volume-lights shine"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <div id="rzgz_num" class="number">8000</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex chart_box">
+            <div class="weui-flex__item chart_hide">
+                <div class="placeholder chartsbox">
+                    <div id="rzgz_chart"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="http://bobo.bj.bcebos.com/echarts.min.js"></script>
-    <script src="http://bobo.bj.bcebos.com/jquery-3.1.1.min.js"></script>
-    <script src="../js/charts.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
+    <script src="http://bobo.bj.bcebos.com/weixin%2Fdataserver.js"></script>
+    <script src="http://bobo.bj.bcebos.com/weixin%2Fcharts.js"></script>
     <script>
+        var checknum = 0,yearday = getDayNum(),everydata = [],behaviorsdata = [];
+        var maping = {
+            "个人项目":"grxm",
+            "认真工作":"rzgz",
+            "学习进步":"xxjb",
+            "锻炼身体":"dlst"
+        }
+
+        data_getAllFrom("mydata/every",function (data) {
+            checknum++;
+            everydata = data;
+            if(checknum === 2){
+                initall();
+            }
+        });
+
+        data_getAllFrom("mydata/behaviors",function (data) {
+            checknum++;
+            behaviorsdata = data;
+            if(checknum === 2){
+                initall();
+            }
+        });
+
+        function initall() {
+            var allnumber = {};
+            for(key in behaviorsdata){
+                if(key != "details"){
+                    var obj  = {};
+                    obj.bl = behaviorsdata[key].fs;
+                    obj.zf = behaviorsdata[key].gh*yearday;
+                    obj.df = 0;
+                    allnumber[behaviorsdata[key].mc] = obj;
+                }
+            }
+            for(key in everydata){
+                if(key != "details"){
+                    var thisobj = allnumber[everydata[key].behavior];
+                    if(thisobj.dataarry){
+                        thisobj.dataarry.shift();
+                        thisobj.timearry.shift();
+                        thisobj.dataarry.push(everydata[key].grade);
+                        thisobj.timearry.push(everydata[key].time);
+                    }else {
+                        thisobj.dataarry = [0,0,0,0,0,0,0];
+                        thisobj.timearry = [0,0,0,0,0,0,0];
+                    }
+                    thisobj.df += parseInt(everydata[key].grade)*parseInt(thisobj.bl);
+                }
+            }
+            getview(allnumber);
+        }
+
+
+        function getview(obj) {
+            console.log(obj);
+            for(key in obj){
+                var dfbl = (obj[key].df/obj[key].zf)*100;
+                if(maping[key]){
+                   $("#"+maping[key]).text(key);
+                   $("#"+maping[key]+"_aria").attr("aria-valuenow",Math.ceil(dfbl));
+                   $("#"+maping[key]+"_num").text(obj[key].df); 
+                   initchart(obj[key].dataarry,obj[key].timearry,maping[key]+"_chart");
+                }
+            }
+
+            
+
+        }
         $(".weui-flex").click(function () {
             $(this).next(".chart_box").children().toggleClass("chart_hide");
         });
+
+        function getDayNum() {
+            var d = new Date();
+            var Y = d.getFullYear();
+            var M = d.getMonth() + 1;
+            var D = d.getDate();
+            for (var i = 1; i < M; i++) {
+                D += new Date(Y,i,0).getDate();
+            }
+            return D;
+        }
     </script>
 </body>
 </html>
